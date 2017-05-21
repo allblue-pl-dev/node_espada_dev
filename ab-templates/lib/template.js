@@ -47,7 +47,7 @@ var Template = {
     _backPath: './build',
     _frontPath: './',
     _indexPath: './',
-    _indexUri: '/',
+    _indexUri: '{{base}}',
 
     Class: function(template_path, final)
     {

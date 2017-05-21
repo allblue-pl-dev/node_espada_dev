@@ -65,7 +65,7 @@ override._build = function(sync, final)
     self.log('Variables:');
     var less_source = '';
     for (var i = 0; i < self._variablePaths.length; i++) {
-        var relative_path = template.getPathUri(self._variablePaths[i]);
+        var relative_path =self._variablePaths[i];
         less_source += '@import "' + relative_path + '";\r\n';
 
         self.log('    - ' + relative_path);
@@ -74,7 +74,7 @@ override._build = function(sync, final)
 
     self.log('Styles:');
     for (var i = 0; i < self._stylesPaths.length; i++) {
-        var relative_path = template.getPathUri(self._stylesPaths[i]);
+        var relative_path = self._stylesPaths[i];
         less_source += '@import "' + relative_path + '";\r\n';
 
         self.log('    - ' + relative_path);
