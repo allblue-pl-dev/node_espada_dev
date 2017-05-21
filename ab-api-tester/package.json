@@ -1,0 +1,21 @@
+{
+  "name": "ab-api-tester",
+  "dependencies": {
+    "mime": "1.3.*",
+    "request": "2.72.*"
+  },
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allblue-pl/njs-ab-api-tester.git"
+  },
+  "author": {
+    "name": "Jakub Zolcik"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allblue-pl/njs-ab-api-tester/issues"
+  },
+  "homepage": "https://github.com/allblue-pl/ab-api-tester#readme"
+}

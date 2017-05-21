@@ -1,0 +1,25 @@
+{
+  "name": "ab-watcher",
+  "version": "0.0.1",
+  "description": "`fs.watch` wrapper.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allblue-pl/ab-watcher.git"
+  },
+  "author": {
+    "name": "AllBlue Monkey"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allblue-pl/ab-watcher/issues"
+  },
+  "homepage": "https://github.com/allblue-pl/ab-watcher#readme",
+  "dependencies": {
+    "chalk": "1.1.*"
+  },
+  "readme": "ERROR: No README data found!"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ab-layouts",
+  "dependencies": {
+    "xmldoc": "0.4.*"
+  }
+}

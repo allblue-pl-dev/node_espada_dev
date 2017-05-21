@@ -1,0 +1,26 @@
+{
+  "name": "ab-sync",
+  "version": "0.0.4",
+  "description": "Simple async to sync module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allblue-pl/ab-sync.git"
+  },
+  "author": {
+    "name": "AllBlue Monkey"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allblue-pl/ab-sync/issues"
+  },
+  "homepage": "https://github.com/allblue-pl/ab-sync#readme",
+  "gitHead": "8e78281800d4215c061db1295f6440b5b8346ec6",
+  "readme": "ERROR: No README data found!",
+  "_id": "ab-sync@0.0.3",
+  "_shasum": "972c195efbbdf29a4156c89c6f0df0d8f5f7b02e",
+  "_from": "ab-sync@0.0.3"
+}

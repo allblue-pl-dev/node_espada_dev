@@ -1,0 +1,29 @@
+{
+  "name": "ab-log",
+  "version": "0.0.3",
+  "description": "Simple `chalk` wrapper.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allblue-pl/ab-log.git"
+  },
+  "author": {
+    "name": "AllBlue Monkey"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allblue-pl/ab-log/issues"
+  },
+  "homepage": "https://github.com/allblue-pl/ab-log#readme",
+  "dependencies": {
+    "chalk": "1.1.*"
+  },
+  "gitHead": "f2a0fa27e97010b70d393bcd3e77a163f7d3ea59",
+  "readme": "ERROR: No README data found!",
+  "_id": "ab-log@0.0.3",
+  "_shasum": "e46eb9e409c82527f8bb3b3cc8c3b67bbde6435e",
+  "_from": "ab-log@*"
+}

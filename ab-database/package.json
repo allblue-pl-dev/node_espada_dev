@@ -1,0 +1,6 @@
+{
+  "name": "ab-database",
+  "dependencies": {
+    "mysql": "2.12.*"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ab-files",
+  "version": "0.0.1",
+  "description": "Files helper.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allblue-pl/ab-files.git"
+  },
+  "author": {
+    "name": "AllBlue Monkey"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allblue-pl/ab-files/issues"
+  },
+  "homepage": "https://github.com/allblue-pl/ab-files#readme",
+  "dependencies": {
+    "chalk": "1.1.*"
+  },
+  "readme": "ERROR: No README data found!"
+}
