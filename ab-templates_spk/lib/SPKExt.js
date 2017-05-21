@@ -59,7 +59,7 @@ override._parse_Pre = function()
 
     var template = self.getTemplate();
 
-    self.spkLayouts = new SPK.Layouts.Class(template.getPath_Index(), '/');
+    self.spkLayouts = new SPK.Layouts.Class(template.getPath_Index(), '');
 
     self._layouts_PathQueries = [];
     self._layouts_Paths = [];
