@@ -40,7 +40,7 @@ override._build = function(sync, final)
         var less_source = '';
 
         for (var i = 0; i < self._cssPaths.length; i++) {
-            var relative_path = template.getPathUri(self._cssPaths[i]);
+            var relative_path = self._cssPaths[i];
             less_source += '@import (less) "' + relative_path + '";\r\n';
         }
 
