@@ -161,6 +161,14 @@ var Template = {
         return path.relative(self._indexPath, fs_path);
     },
 
+    getRelativeUri: function(fs_path, base_path)
+    {
+        var self = this.self;
+
+        return path.relative(fs_path, base_path)
+            .replace(/\\/gm, '/');
+    },
+
     getTemplateDirPath: function()
     {
         var self = this.self;

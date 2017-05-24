@@ -53,7 +53,7 @@ override._build = function(sync, final)
         }
 
         less.render(less_source, {
-            paths: [template.getPath_Index()],
+            paths: [ template.getPath_Index() ],
             filename: 'ab.less',
             compress: compress,
             dumpLineNumbers: dump_line_numbers,
@@ -81,9 +81,11 @@ override._build = function(sync, final)
             var index_path_re = index_path
                 .replace(/\./gm, '\\.')
                 .replace(/\//gm, '\\/');
+            var index_uri_replace = './' + template.getRelativeUri(css_dir,
+                    template.getPath_Index()) + '/';
 
             var re = new RegExp('url\\((\'|")' + index_path_re, 'gm');
-            var css = output.css.replace(re, "url($1" + template.getUri_Index());
+            var css = output.css.replace(re, "url($1" + index_uri_replace);
 
             var css_path = path.join(css_dir, 'styles.min.css');
 

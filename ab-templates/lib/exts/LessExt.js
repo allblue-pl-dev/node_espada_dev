@@ -106,6 +106,7 @@ override._build = function(sync, final)
         }
 
         var css_dir = path.join(template.getPath_Front(), 'css');
+        var css_path = path.join(css_dir, 'ab-template.css');
         if (!abFiles.dir_Exists(css_dir)) {
             self.warn('`%s` does not exist. Creating...', css_dir);
             abFiles.dir_Create(css_dir);
@@ -117,11 +118,13 @@ override._build = function(sync, final)
         var index_path_re = index_path
             .replace(/\./gm, '\\.')
             .replace(/\//gm, '\\/');
+        var index_uri_replace = './' + template.getRelativeUri(css_dir,
+                template.getPath_Index()) + '/';
 
         var re = new RegExp('url\\((\'|")' + index_path_re, 'gm');
-        var css = output.css.replace(re, "url($1" + template.getUri_Index());
+        var css = output.css.replace(re, "url($1" + index_uri_replace);
 
-        abFiles.file_PutContent(path.join(css_dir, 'ab-template.css'), css);
+        abFiles.file_PutContent(css_path, css);
 
         self.success('Generated `css/ab-template.css`');
 
