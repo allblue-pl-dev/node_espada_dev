@@ -85,7 +85,7 @@ const _Database = {
 
         let queries = [];
         for (let i = 0; i < this._tables.length; i++) {
-            // queries.push('DELETE FROM ' + this._tables[i] + where);
+            queries.push('DELETE FROM ' + this._tables[i] + where);
             queries.push('ALTER TABLE ' + this._tables[i] + auto_increment);
         }
 
