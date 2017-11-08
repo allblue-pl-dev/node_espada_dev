@@ -132,16 +132,26 @@ var Layout = {
 
         var repeat_infos = self._nodeRepeatInfos[node_json_index];
         for (var i = repeat_infos.length - 1; i >= 0; i--) {
+            var b_field_name = field_name;
+
             var item = repeat_infos[i].item;
             var item_field = repeat_infos[i].field;
             var key = repeat_infos[i].key;
 
-            if (field_name === key)
+            if (field_name === key) {
                 field_name = item_field + '.#';
-            else {
-                field_name = field_name.replace(new RegExp('^' + item),
-                        item_field + '.*');
+                break;
             }
+
+            field_name = field_name.replace(new RegExp('^' + item + '$'),
+                    item_field + '.*');
+            if (field_name !== b_field_name)
+                break;
+
+            field_name = field_name.replace(new RegExp('^' + item + '\.'),
+                    item_field + '.*.');
+            if (field_name !== b_field_name)
+                break;
         }
 
         if (!fn_info.isFn) {
